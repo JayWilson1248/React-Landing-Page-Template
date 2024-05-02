@@ -34,11 +34,13 @@
 
 .intro {
   background: url(./assets/img/books.jpg) center center no-repeat;
-  background-size:100%;
-  filter:blur(5px) brightness(.3);
+  background-size: cover;
+  filter:blur(3px) brightness(.5);
+  
 }
 
 .overlay {
+  
   filter:blur(0px) brightness(1);
 }
 
