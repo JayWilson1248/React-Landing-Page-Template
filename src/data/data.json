@@ -3,163 +3,154 @@
     "title": "Sabbath Seminars",
     "paragraph": "Room 3208\nCentennial Complex of Loma Linda University\nSabbath Morning 10:30-12:30"
   },
-  "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
-    ],
-    "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
-    ]
-  },
-  "Gallery": [
+  "Conversations": [
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
+      "title": "A Conversation with Vern Carner- #1",
+      "date": "",
+      "href": "https://vimeo.com/showcase/8951537/video/702694271",
+      "desc":""
+      
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "title": "A Conversation with Vern Carner- #2",
+      "date": "April 23, 2022",
+      "href": "https://vimeo.com/showcase/8951537/video/715308807",
+      "desc":""
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
+      "title": "A Conversation with Donald Casebolt",
+      "date": "May 28, 2022",
+      "href": "https://vimeo.com/showcase/8951537/video/800372217",
+      "desc":"(Part 2 of the presentation of his book Father Miller’s Daughter;\nPart 1 is the morning presentation)"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
+      "title": "Sasha Ross",
+      "date": "September 10, 2022",
+      "href": "",
+      "desc":"This session was not recorded."
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "title": "Georgia Hodgkin",
+      "date": "October 8, 2022",
+      "href": "",
+      "desc":"This session was not recorded.\n\nGeorgia reflects on her career, why she obtained a leadership PhD from LLU Riverside (to give her a necessary skillset for boardroom and leadership work),  her leadership at the Loma Linda University Church, concerns with authoritarianism in the local congregation, and her experience as a long-time LLUC head elder/board chair.  She actively participated in the movement supporting women in ministry as a LLU Church leader."
     }
   ],
-  "Services": [
+  "Schedule": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-calendar",
+      "name": "February 24",
+      "text": "Mailen Kootsey,\nLoma Linda University, Ret.\n\nMultidisciplinary Science;  Physics"
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-calendar",
+      "name": "March 2",
+      "text": " Jim Hayward and Shandelle Hensen,\nAndrews University, Ret.\n\nBiology;  Mathematics"
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-calendar",
+      "name": "March 9",
+      "text": "Mary Schweitzer,\nNorth Carolina State University\n\nPaleontology (soft tissue, blood cells)"
     },
     {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-calendar",
+      "name": "March 16",
+      "text": "Kirk  Johnson,\nSmithsonian Museum of Science and Industry\n\nPaleontology;  Sant Director of National Museum of Natural History"
     },
     {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-calendar",
+      "name": "March 23",
+      "text": "Scott Bitterfield,\n Pacific Union College, The Nature Conservancy\n\nPlant Biology, Ecology, Evolutionary Biology and Behavior;\nLead scientist for the Land Program of the Nature Conservancy in California"
     },
     {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-calendar",
+      "name": "March 30",
+      "text": "Mailen Kootsey,\n  LLU, Retired\n\nThe Universal Law Of Nature You Have Never Heard Of\n\n\n\n"
+    },
+    {
+      "icon": "fa fa-calendar",
+      "name": "April 6",
+      "text": "Daniel Gonzalez-Socoloske,\nAndrews University\n\nTropical Mammal Ecology and Conservation;  Biostatistics"
+    },
+    {
+      "icon": "fa fa-calendar",
+      "name": "April 13",
+      "text": "Peter Lyons,\nAndrews University\n\nYeast Genetics, Cell biology, Biochemistry\n\n"
+    },
+    {
+      "icon": "fa fa-calendar",
+      "name": "April 20",
+      "text": "Penny Duerksen-Hughes,\nLoma Linda University\n\nBiochemistry and Microbiology\n\n"
+    },
+    {
+      "icon": "fa fa-calendar",
+      "name": "April 27",
+      "text": "James Gulley,\nNational Institutes of Health\n\nCancer Immunotherapy leader; PhD, M.D"
     }
   ],
   "Testimonials": [
     {
-      "img": "img/testimonials/01.jpg",
+      "assets/img": "assets/img/testimonials/01.jpg",
       "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
       "name": "John Doe"
     },
     {
-      "img": "img/testimonials/02.jpg",
+      "assets/img": "assets/img/testimonials/02.jpg",
       "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
       "name": "Johnathan Doe"
     },
     {
-      "img": "img/testimonials/03.jpg",
+      "assets/img": "assets/img/testimonials/03.jpg",
       "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
       "name": "John Doe"
     },
     {
-      "img": "img/testimonials/04.jpg",
+      "assets/img": "assets/img/testimonials/04.jpg",
       "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
       "name": "Johnathan Doe"
     },
     {
-      "img": "img/testimonials/05.jpg",
+      "assets/img": "assets/img/testimonials/05.jpg",
       "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
       "name": "John Doe"
     },
     {
-      "img": "img/testimonials/06.jpg",
+      "assets/img": "assets/img/testimonials/06.jpg",
       "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
       "name": "Johnathan Doe"
     }
   ],
   "Team": [
     {
-      "img": "img/team/01.jpg",
+      "assets/img": "assets/img/team/01.jpg",
       "name": "John Doe",
       "job": "Director"
     },
     {
-      "img": "img/team/02.jpg",
+      "assets/img": "assets/img/team/02.jpg",
       "name": "Mike Doe",
       "job": "Senior Designer"
     },
     {
-      "img": "img/team/03.jpg",
+      "assets/img": "assets/img/team/03.jpg",
       "name": "Jane Doe",
       "job": "Senior Designer"
     },
     {
-      "img": "img/team/04.jpg",
+      "assets/img": "assets/img/team/04.jpg",
       "name": "Karen Doe",
       "job": "Project Manager"
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
+    "address": "Room 3208, Centennial Complex at Loma Linda University",
+    "phone": "(909) 123 4567",
+    "email": "info@sabbathseminars.net",
     "facebook": "fb.com",
     "twitter": "twitter.com",
     "youtube": "youtube.com"
   },
-  "Mission": [
+  "About": [
     {
       "icon": "fa fa-comments-o",
       "title": "Our Mission",

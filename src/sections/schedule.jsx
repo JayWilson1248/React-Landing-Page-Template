@@ -1,16 +1,21 @@
 import React from "react";
+import NewSeries from "../assets/img/schedule_hero.jpg"
 
-export const Services = (props) => {
+export const Schedule = (props) => {
   return (
-    <div id="services" className="text-center">
+    <div id="schedule" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Our Services</h2>
+          <h2>Current Schedule</h2>
+          <h3 style={{ textTransform:"uppercase"}}>
+          Scientists reflect on their journey of faith
+          </h3>
+          <img src={NewSeries} alt="michaelangelo hand of God"/>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+          Announcing A New Series Organized by Mailen Kootsey
           </p>
         </div>
+        <br />
         <div className="row">
           {props.data
             ? props.data.map((d, i) => (

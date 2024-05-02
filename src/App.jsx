@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
+
+import {Routes, Route,} from "react-router-dom"
+
 import { Navigation } from "./sections/navigation";
 import { Header } from "./sections/header";
-import { Mission } from "./sections/mission";
 import { About } from "./sections/about";
-import { Services } from "./sections/services";
-import { Gallery } from "./sections/gallery";
+import { Schedule } from "./sections/schedule";
 import { Testimonials } from "./sections/testimonials";
 import { Team } from "./sections/Team";
 import { Contact } from "./sections/contact";
 import JsonData from "./data/data.json";
+
+import Conversations from "./pages/conversations";
+
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 
@@ -17,24 +21,35 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
   speedAsDuration: true,
 });
 
-const App = () => {
+function App() {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
 
+  
+  
+
   return (
-    <div>
-      <Navigation />
-      <Header data={landingPageData.Header} />
-      <Mission data={landingPageData.Mission} />
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery} />
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element= {(
+
+          <div>
+            <Navigation />
+            <Header data={landingPageData.Header} />
+            <About data={landingPageData.About} />
+            <Schedule data={landingPageData.Schedule} />
+            
+            <Testimonials data={landingPageData.Testimonials} />
+            <Team data={landingPageData.Team} />
+            <Contact data={landingPageData.Contact} />
+          </div>
+        )}
+      />
+      <Route path="/pages/conversations" element={<Conversations data={landingPageData.Conversations} />} />
+    </Routes>
   );
 };
 

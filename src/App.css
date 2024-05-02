@@ -44,3 +44,13 @@
   filter:blur(0px) brightness(1);
 }
 
+#about h2::after {
+  left:50%;
+}
+
+.conversation-items:nth-child(odd) {
+  margin:20px auto;
+  background:linear-gradient(to left, #83d2dd 0%, #a7cef9 100%);
+  color:black;
+  padding:20px;
+}

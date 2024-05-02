@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from '../assets/img/llu_logo.png';
 
 export const Navigation = (props) => {
@@ -29,24 +30,21 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#mission" className="page-scroll">
+              <a href="#about" className="page-scroll">
                 Mission & Vision
               </a>
             </li>
             <li>
-              <a href="#about" className="page-scroll">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="page-scroll">
+              <a href="#schedule" className="page-scroll">
                 Current Schedule
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="page-scroll">
-                Gallery
-              </a>
+              <Link to="/pages/Conversations">
+              <div href="#Conversations" className="page-scroll">
+                Conversations
+              </div>
+              </Link>
             </li>
             <li>
               <a href="#testimonials" className="page-scroll">

@@ -307,19 +307,19 @@ header .intro-text {
   line-height: 24px;
   margin: 30px 0;
 }
-/* Services Section */
-#services {
+/* Schedule Section */
+#schedule {
   padding: 100px 0;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: #fff;
 }
-#services .service-desc {
+#schedule .service-desc {
   margin: 10px 10px 20px;
 }
-#services h2 {
+#schedule h2 {
   color: #fff;
 }
-#services .section-title h2::after {
+#schedule .section-title h2::after {
   position: absolute;
   content: "";
   background: rgba(255, 255, 255, 0.3);
@@ -329,7 +329,7 @@ header .intro-text {
   margin-left: -30px;
   left: 50%;
 }
-#services i.fa {
+#schedule i.fa {
   font-size: 42px;
   width: 120px;
   height: 120px;
@@ -339,26 +339,26 @@ header .intro-text {
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
-#services h3 {
+#schedule h3 {
   font-weight: 500;
   padding: 5px 0;
   color: #fff;
 }
-#services p {
+#schedule p {
   color: rgba(255, 255, 255, 0.75);
 }
-#services .service-desc {
+#schedule .service-desc {
   margin-bottom: 40px;
 }
-/* Portfolio Section */
-#portfolio {
+/* Conversation Section */
+#conversation {
   padding: 100px 0;
 }
-.portfolio-item {
+.conversation-item {
   margin: 1px -15px 0 -14px;
   padding: 0;
 }
-.portfolio-item .hover-bg {
+.conversation-item .hover-bg {
   overflow: hidden;
   position: relative;
   margin: 0;
