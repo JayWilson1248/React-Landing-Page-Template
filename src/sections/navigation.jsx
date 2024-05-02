@@ -1,5 +1,5 @@
 import React from "react";
-let Logo = require('../assets/img/llu_logo.png');
+import Logo from '../assets/img/llu_logo.png';
 
 export const Navigation = (props) => {
   return (
