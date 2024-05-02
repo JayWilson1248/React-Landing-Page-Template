@@ -1,4 +1,5 @@
 import React from "react";
+let Logo = require('../assets/img/llu_logo.png');
 
 export const Navigation = (props) => {
   return (
@@ -18,7 +19,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            React Landing Page
+            <img src={Logo} alt="llu logo" width="auto" height="100%" />
           </a>{" "}
         </div>
 
@@ -28,18 +29,18 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
-                Features
+              <a href="#mission" className="page-scroll">
+                Mission & Vision
               </a>
             </li>
             <li>
               <a href="#about" className="page-scroll">
-                About
+                About Us
               </a>
             </li>
             <li>
               <a href="#services" className="page-scroll">
-                Services
+                Current Schedule
               </a>
             </li>
             <li>
@@ -49,7 +50,7 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href="#testimonials" className="page-scroll">
-                Testimonials
+                LGBTQ+
               </a>
             </li>
             <li>
@@ -59,7 +60,7 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href="#contact" className="page-scroll">
-                Contact
+                Contact & Support
               </a>
             </li>
           </ul>

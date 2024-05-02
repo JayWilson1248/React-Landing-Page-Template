@@ -1,7 +1,7 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Sabbath Seminars",
+    "paragraph": "Room 3208\nCentennial Complex of Loma Linda University\nSabbath Morning 10:30-12:30"
   },
   "About": {
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -159,26 +159,21 @@
     "twitter": "twitter.com",
     "youtube": "youtube.com"
   },
-  "Features": [
+  "Mission": [
     {
       "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Our Mission",
+      "text": "Sabbath Seminars is a welcoming spiritual community and ministry of the Loma Linda University Church. We explore life’s big questions using the tools of reason, biblical study, human experience, and our Christian heritage."
     },
     {
       "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Our Vision",
+      "text": "Sabbath Seminars is a unique Sabbath School destination for persons of diverse spiritual worldviews, political perspectives, race, economic status, and sexual orientation. Accordingly, Sabbath Seminars envisions:\n\n--a vibrant class community where thoughtful inquiry is welcome.\n--a class that models what a “big tent” church can be.\n--a LLUC congregation that is enriched by our participation.\n--a San Bernardino community that benefits from Sabbath Seminars' engagement."
     },
     {
       "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Lets Elaborate",
+      "text": "Sabbath Seminars is perhaps the oldest individual Sabbath School class at LLUC, beginning almost 50 years ago. It has long been committed to the deep exploration of the Christian intersection with the world of ideas.\n\nWe embrace both the critical study of scripture and its use in our spiritual lives. We use the tools of reason because we know that truth is always advancing, and God has given us the responsibility of engaging it with utmost thought. We value human experience because we accept the divine invitation of co-creation that generates the liberal arts and sciences.\n\nSabbath Seminars acclaims diversity, welcoming all, especially the LGBTQ+ community. We seek the human flourishing of all, regardless of racial, cultural, or gender differences. We praise the unconditional acceptance of all in Christ. Because we aspire to be a diverse community, we may not always agree. But we will seek to always respect and support one another.\n\nThe Sabbath Seminars class has intentionally chosen these statements of who we are and who we want to be. As we further reflect on them and seek specific ways to fulfill them, we look forward to revisiting these aspirations periodically."
     }
   ]
 }

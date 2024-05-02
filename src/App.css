@@ -16,3 +16,29 @@
     width: 110%;
   }
 }
+
+/* handle \n character everywhere */
+* {
+  white-space: pre-line;  
+  vertical-align: bottom;
+}
+
+.navbar-brand {
+  padding:0px;
+}
+
+.section-title {
+  margin:15px 0px;
+}
+
+
+.intro {
+  background: url(../public/img/books.jpg) center center no-repeat;
+  background-size:100%;
+  filter:blur(5px) brightness(.3);
+}
+
+.overlay {
+  filter:blur(0px) brightness(1);
+}
+
