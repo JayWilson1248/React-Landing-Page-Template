@@ -1,8 +1,8 @@
 import React from "react";
 
 //navigation
-import { Navigation } from "../sections/navigation";
-import  HeaderSmall  from "../sections/header-small";
+import { Navigation } from "../components/navigation";
+import  HeaderSmall  from "../components/header-small";
 
 import Button  from "react-bootstrap/Button"
 
@@ -14,16 +14,16 @@ function Conversations(props) {
     <div id="Conversations" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Conversations</h2>
-          
           <div className="col-md-8 col-md-offset-2">
-          Sabbath Seminars hosts occasional Afternoon Conversations with individuals who have made significant contributions in scholarship or leadership
-          <br /><br />
-          The conversation may or may not relate to the morning study
-          <br /><br />
-          Usually the Conversation follows a Sabbath Seminars potluck
-          <br /><br />
-          Click on the event for the video (remember that you must also have the Vimeo password)
+            <p>
+              Sabbath Seminars hosts occasional Afternoon Conversations with individuals who have made significant contributions in scholarship or leadership
+              <br /><br />
+              The conversation may or may not relate to the morning study
+              <br /><br />
+              Usually the Conversation follows a Sabbath Seminars potluck
+              <br /><br />
+              Click on the event for the video (remember that you must also have the Vimeo password)
+            </p>
           </div>
         
         </div>
@@ -37,6 +37,7 @@ function Conversations(props) {
                   >
                     <h4>{d.date}</h4>
                     <div>
+                      <p>
                       {d.href ? 
                       <Button
                         variant="primary"
@@ -52,9 +53,10 @@ function Conversations(props) {
                       : 
                          d.title
                       }
+                      </p>
                     </div>
                     <br />
-                    <span style={{ fontWeight:"lighter"}}>{d.desc}</span>
+                    <p style={{ fontWeight:"lighter"}}>{d.desc}</p>
                   </div>
                 ))
               : "Loading..."}

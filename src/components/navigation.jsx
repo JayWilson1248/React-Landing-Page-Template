@@ -45,6 +45,7 @@ export const Navigation = (props) => {
                 pathname:"/",
                 hash:"#schedule"
                 }}
+                state={{title: "Current Schedule"}}
               >
               <div>
                 Current Schedule
@@ -55,16 +56,18 @@ export const Navigation = (props) => {
               <Link to={{
                 pathname: "/pages/Conversations",
                 hash:"#Conversations",
-              }}
-                >
+                }}
+                state={{title: "Conversations"}}
+              >
                 Conversations
               </Link>
             </li>
             <li>
             <Link to={{
-                pathname:"/",
-                hash:"#testimonials"
+                pathname:"/pages/lgbtq",
+                hash:"#LGBTQ"
                 }}
+                state={{title: "LGBTQ+"}}
               >
               <div>
                 LGBTQ+
@@ -76,6 +79,7 @@ export const Navigation = (props) => {
                 pathname:"/",
                 hash:"#team"
                 }}
+                state={{title: "Team"}}
               >
               <div>
                 Team
@@ -87,6 +91,7 @@ export const Navigation = (props) => {
                 pathname:"/",
                 hash:"#contact"
                 }}
+                state={{title: "Contact & Giving"}}
               >
               <div>
                 Contact & Giving

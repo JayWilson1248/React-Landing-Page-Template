@@ -88,7 +88,7 @@
       "text": "James Gulley,\nNational Institutes of Health\n\nCancer Immunotherapy leader; PhD, M.D"
     }
   ],
-  "Testimonials": [
+  "LGBTQ": [
     {
       "assets/img": "assets/img/testimonials/01.jpg",
       "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
@@ -122,24 +122,44 @@
   ],
   "Team": [
     {
-      "assets/img": "assets/img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
+      "img": "../assets/img/team/01.jpg",
+      "name": "Karen Darnell",
+      "job": "Facilitator of Leadership"
     },
     {
-      "assets/img": "assets/img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
+      "img": "../assets/img/team/02.jpg",
+      "name": "Mailen Kootsey",
+      "job": " Zoom Host manager"
     },
     {
-      "assets/img": "assets/img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
+      "img": "../assets/img/team/03.jpg",
+      "name": "Frances Priest",
+      "job": "Liturgist"
     },
     {
-      "assets/img": "assets/img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
+      "img": "../assets/img/team/07.jpg",
+      "name": "Jim Walters",
+      "job": "Moderator"
+    },
+    {
+      "img": "../assets/img/team/04.jpg",
+      "name": "John Testerman",
+      "job": "Associate Moderator"
+    },
+    {
+      "img": "../assets/img/team/05.jpg",
+      "name": "Bill Shull",
+      "job": "Associate Moderator & Webmaster"
+    },
+    {
+      "img": "../assets/img/team/06.jpg",
+      "name": "Roger Domeny",
+      "job": "Associate Moderator"
+    },
+    {
+      "img": "../assets/img/team/07.jpg",
+      "name": "Dennis Hokama",
+      "job": "Moderator Emeritus"
     }
   ],
   "Contact": {
@@ -166,5 +186,13 @@
       "title": "Lets Elaborate",
       "text": "Sabbath Seminars is perhaps the oldest individual Sabbath School class at LLUC, beginning almost 50 years ago. It has long been committed to the deep exploration of the Christian intersection with the world of ideas.\n\nWe embrace both the critical study of scripture and its use in our spiritual lives. We use the tools of reason because we know that truth is always advancing, and God has given us the responsibility of engaging it with utmost thought. We value human experience because we accept the divine invitation of co-creation that generates the liberal arts and sciences.\n\nSabbath Seminars acclaims diversity, welcoming all, especially the LGBTQ+ community. We seek the human flourishing of all, regardless of racial, cultural, or gender differences. We praise the unconditional acceptance of all in Christ. Because we aspire to be a diverse community, we may not always agree. But we will seek to always respect and support one another.\n\nThe Sabbath Seminars class has intentionally chosen these statements of who we are and who we want to be. As we further reflect on them and seek specific ways to fulfill them, we look forward to revisiting these aspirations periodically."
     }
-  ]
+  ],
+    "Zoom":[
+      {
+        "icon": "fa fa-comments-o",
+        "title": "zoom link",
+        "text": "To participate in the zoom class",
+        "href": "https://us02web.zoom.us/j/81174477062?pwd=Sk9wVEJkNk8waENVekoyVW0vblNxdz09"
+      }
+    ]
 }

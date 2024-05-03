@@ -2,19 +2,27 @@ import React, { useState, useEffect, useRef } from "react";
 
 import {Routes, Route, useLocation} from "react-router-dom"
 
-import { Navigation } from "./sections/navigation";
-import { Header } from "./sections/header";
+//COMPONENTS
+import { Navigation } from "./components/navigation";
+import { Header } from "./components/header";
+import  ZoomButton  from "./components/zoomButton";
+
+//HOME PAGE SECTIONS
 import { About } from "./sections/about";
 import { Schedule } from "./sections/schedule";
-import { Testimonials } from "./sections/testimonials";
 import { Team } from "./sections/Team";
 import { Contact } from "./sections/contact";
 import JsonData from "./data/data.json";
 
+//PAGES
 import Conversations from "./pages/conversations";
+import LGBTQ  from "./pages/lgbtq";
 
 import SmoothScroll from "smooth-scroll";
+
+//CSSes
 import "./App.css";
+
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -58,16 +66,17 @@ function App() {
           <div>
             <Navigation />
             <Header data={landingPageData.Header} />
+            <ZoomButton />
             <About data={landingPageData.About} />
             <Schedule data={landingPageData.Schedule} />
-            
-            <Testimonials data={landingPageData.Testimonials} />
             <Team data={landingPageData.Team} />
             <Contact data={landingPageData.Contact} />
           </div>
         )}
       />
-      <Route path="/pages/conversations" state="Conversations" element={<Conversations data={landingPageData.Conversations} />} />
+      <Route path="/pages/conversations" element={<Conversations data={landingPageData.Conversations} />} />
+      <Route path="/pages/lgbtq" element={<LGBTQ data={landingPageData.LGBTQ} />} />
+
     </Routes>
   );
 };
