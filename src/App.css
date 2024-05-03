@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @media screen and (max-width: 400px) {
   #features {
     padding: 20px;
     width: 111%;
   }
+
   #about,
-  #services,
+  #schedule,
   #testimonials,
+  #conversations,
   #team,
   #contact,
   #footer {
@@ -15,6 +19,13 @@
   #portfolio {
     width: 110%;
   }
+}
+
+.intro h1 {
+  font-family:'PT Serif', serif;
+  font-style:italic;
+  font-weight:100;
+  text-transform:none;
 }
 
 /* handle \n character everywhere */
@@ -33,7 +44,7 @@
 
 
 .intro {
-  background: url(./assets/img/books.jpg) center center no-repeat;
+  background: url(./assets/img/books.png) center center no-repeat;
   background-size: cover;  
 }
 
