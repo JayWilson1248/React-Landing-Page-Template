@@ -2,6 +2,7 @@ import React from "react";
 
 //navigation
 import { Navigation } from "../sections/navigation";
+import  HeaderSmall  from "../sections/header-small";
 
 import Button  from "react-bootstrap/Button"
 
@@ -9,7 +10,8 @@ function Conversations(props) {
   return (
     <>
     <Navigation />
-    <div id="conversation" className="text-center">
+    <HeaderSmall />
+    <div id="Conversations" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Conversations</h2>

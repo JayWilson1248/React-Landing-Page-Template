@@ -4,7 +4,7 @@ export const Header = (props) => {
   return (
     <header id="header">
       <div className="intro">
-        <div class="img"></div>
+        <div className="img"></div>
         <div className="overlay">
           <div className="container">
             <div className="row">
@@ -14,12 +14,7 @@ export const Header = (props) => {
                   <span></span>
                 </h1>
                 <p>{props.data ? props.data.paragraph : "Loading"}</p>
-                <a
-                  href="#features"
-                  className="btn btn-custom btn-lg page-scroll"
-                >
-                  Learn More
-                </a>{" "}
+               {" "}
               </div>
             </div>
           </div>

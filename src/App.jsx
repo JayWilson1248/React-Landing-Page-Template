@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
-import {Routes, Route,} from "react-router-dom"
+import {Routes, Route, useLocation} from "react-router-dom"
 
 import { Navigation } from "./sections/navigation";
 import { Header } from "./sections/header";
@@ -23,9 +23,28 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 function App() {
   const [landingPageData, setLandingPageData] = useState({});
+
+  const location = useLocation();
+  const lastHash = useRef('');
+
   useEffect(() => {
     setLandingPageData(JsonData);
-  }, []);
+
+    if(location.hash) {
+      lastHash.current = location.hash.slice(1);
+    }
+
+    if (lastHash.current && document.getElementById(lastHash.current)) {
+      setTimeout(() => {
+        document.getElementById(lastHash.current)
+        ?.scrollIntoView({behavior: 'smooth', block: 'start' });
+        lastHash.current ='';
+
+      }, 100)
+
+    }
+
+  }, [location]);
 
   
   
@@ -48,7 +67,7 @@ function App() {
           </div>
         )}
       />
-      <Route path="/pages/conversations" element={<Conversations data={landingPageData.Conversations} />} />
+      <Route path="/pages/conversations" state="Conversations" element={<Conversations data={landingPageData.Conversations} />} />
     </Routes>
   );
 };

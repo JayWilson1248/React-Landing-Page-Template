@@ -30,36 +30,68 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#about" className="page-scroll">
+              <Link to={{
+                pathname:"/",
+                hash:"#about"
+                }}
+              >
+              <div>
                 Mission & Vision
-              </a>
-            </li>
-            <li>
-              <a href="#schedule" className="page-scroll">
-                Current Schedule
-              </a>
-            </li>
-            <li>
-              <Link to="/pages/Conversations">
-              <div href="#Conversations" className="page-scroll">
-                Conversations
               </div>
               </Link>
             </li>
             <li>
-              <a href="#testimonials" className="page-scroll">
+            <Link to={{
+                pathname:"/",
+                hash:"#schedule"
+                }}
+              >
+              <div>
+                Current Schedule
+              </div>
+              </Link>
+            </li>
+            <li>
+              <Link to={{
+                pathname: "/pages/Conversations",
+                hash:"#Conversations",
+              }}
+                >
+                Conversations
+              </Link>
+            </li>
+            <li>
+            <Link to={{
+                pathname:"/",
+                hash:"#testimonials"
+                }}
+              >
+              <div>
                 LGBTQ+
-              </a>
+              </div>
+              </Link>
             </li>
             <li>
-              <a href="#team" className="page-scroll">
+            <Link to={{
+                pathname:"/",
+                hash:"#team"
+                }}
+              >
+              <div>
                 Team
-              </a>
+              </div>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="page-scroll">
-                Contact & Support
-              </a>
+            <Link to={{
+                pathname:"/",
+                hash:"#contact"
+                }}
+              >
+              <div>
+                Contact & Giving
+              </div>
+              </Link>
             </li>
           </ul>
         </div>
