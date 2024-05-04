@@ -3,8 +3,8 @@ import React from "react";
 //navigation
 import { Navigation } from "../components/navigation";
 import  HeaderSmall  from "../components/header-small";
-
-import Button  from "react-bootstrap/Button"
+import Footer from "../components/footer";
+import Button  from "react-bootstrap/Button";
 
 function Conversations(props) {
   return (
@@ -33,7 +33,7 @@ function Conversations(props) {
               ? props.data.map((d, i) => (
                   <div
                     key={`${d.title}-${i}`}
-                    className="conversation-items col-xs-12 "
+                    className="conversation-items col-xs-12 convert-br"
                   >
                     <h4>{d.date}</h4>
                     <div>
@@ -64,6 +64,8 @@ function Conversations(props) {
         </div>
       </div>
     </div>
+
+    <Footer />
     </>
   );
 };

@@ -122,42 +122,42 @@
   ],
   "Team": [
     {
-      "img": "../assets/img/team/01.jpg",
+      "img": "team/default-avatar-f.png",
       "name": "Karen Darnell",
       "job": "Facilitator of Leadership"
     },
     {
-      "img": "../assets/img/team/02.jpg",
+      "img": "team/default-avatar-m.png",
       "name": "Mailen Kootsey",
       "job": " Zoom Host manager"
     },
     {
-      "img": "../assets/img/team/03.jpg",
+      "img": "team/default-avatar-f.png",
       "name": "Frances Priest",
       "job": "Liturgist"
     },
     {
-      "img": "../assets/img/team/07.jpg",
+      "img": "team/default-avatar-m.png",
       "name": "Jim Walters",
       "job": "Moderator"
     },
     {
-      "img": "../assets/img/team/04.jpg",
+      "img": "team/default-avatar-m.png",
       "name": "John Testerman",
       "job": "Associate Moderator"
     },
     {
-      "img": "../assets/img/team/05.jpg",
+      "img": "team/billShull.jpg",
       "name": "Bill Shull",
       "job": "Associate Moderator & Webmaster"
     },
     {
-      "img": "../assets/img/team/06.jpg",
+      "img": "team/default-avatar-m.png",
       "name": "Roger Domeny",
       "job": "Associate Moderator"
     },
     {
-      "img": "../assets/img/team/07.jpg",
+      "img": "team/default-avatar-m.png",
       "name": "Dennis Hokama",
       "job": "Moderator Emeritus"
     }

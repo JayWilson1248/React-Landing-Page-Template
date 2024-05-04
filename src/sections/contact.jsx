@@ -1,6 +1,8 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+import ListGroup from 'react-bootstrap/ListGroup';
+
 
 const initialState = {
   name: "",
@@ -152,17 +154,35 @@ export const Contact = (props) => {
             </div>
           </div>
         </div>
-      </div>
-      <div id="footer">
-        <div className="container text-center">
-          <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
-          </p>
+        <div className="row">
+          <div className="col-sm-12 text-center"> {/* Giving */}
+            <p>
+            You may support Sabbath Seminars financially by making a contribution at the Loma Linda University Church website’s giving page.<br />
+            </p>
+            <p className="col-xs-6 text-left col-xs-offset-4">
+              <ListGroup>
+                <ListGroup.Item>
+                  Start at <a
+                        className="dark-link"
+                        href="http://www.lluc.org" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        
+                      >
+                      www.lluc.org
+                    </a>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  You will click on the GIVE button on the top right of the home page, then again on the GIVE NOW button in the center.
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  Under Local Church click on More Offering Categories, then click on Sabbath Seminars.  <br />
+                </ListGroup.Item>
+              </ListGroup>
+            </p>
+          </div>
         </div>
-      </div>
+      </div>   
     </div>
   );
 };

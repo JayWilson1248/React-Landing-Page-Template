@@ -1,11 +1,10 @@
 import React from "react";
-import {useLocation} from 'react-router-dom'
+//import {useLocation} from 'react-router-dom'
 
 function HeaderSmall(props) {
-  const location = useLocation();
-  const title = location.state.title;
+  //const location = useLocation();
+  //const title = location.state.title;
 
-  console.log(location, title);
   return (
     <>
     <header id="header">
@@ -14,8 +13,8 @@ function HeaderSmall(props) {
         <div className="overlay">
           <div className="container">
             <div className="row">
-              <div className="intro-text">
-                <h1>{title}</h1>
+              <div className="intro-text convert-br">
+                <h1>{/* title ? title : ""; */}Some Title</h1>
               </div>
             </div>
           </div>

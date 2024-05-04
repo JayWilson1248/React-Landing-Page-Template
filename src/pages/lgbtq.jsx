@@ -2,6 +2,7 @@ import React from "react";
 
 import { Navigation } from "../components/navigation";
 import HeaderSmall from "../components/header-small";
+import Footer from "../components/footer";
 
 function LGBTQ(props) {
   return (
@@ -80,6 +81,8 @@ function LGBTQ(props) {
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };

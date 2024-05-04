@@ -1,24 +1,23 @@
+/* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900');
 
-@media screen and (max-width: 400px) {
-  #features {
-    padding: 20px;
-    width: 111%;
-  }
 
-  #about,
-  #schedule,
-  #testimonials,
-  #conversations,
-  #team,
-  #contact,
-  #footer {
-    width: 111%;
-  }
 
-  #portfolio {
-    width: 110%;
-  }
+.dark-link:hover, .dark-link:visited {
+  color:lightgray;
+  text-decoration: underline;
+}
+
+.dark-link:active {
+  color:goldenrod;
+}
+
+.dark-link {
+  color:white;
+  text-decoration: underline;
 }
 
 .modal-dialog {
@@ -34,7 +33,7 @@
 }
 
 /* handle \n character everywhere */
-* {
+.convert-br {
   white-space: pre-line;  
   vertical-align: bottom;
 }
@@ -78,4 +77,14 @@
   background:linear-gradient(to left, #83d2dd 0%, #a7cef9 100%);
   color:black;
   padding:20px;
+}
+
+.team-img {
+  border-radius:50%;
+}
+
+#footer {
+  position: sticky;
+  bottom:0;
+  left:0;
 }

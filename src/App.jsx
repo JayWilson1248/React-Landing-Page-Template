@@ -1,31 +1,30 @@
+//CORE
 import React, { useState, useEffect, useRef } from "react";
-
 import {Routes, Route, useLocation} from "react-router-dom"
 
-//COMPONENTS
-import { Navigation } from "./components/navigation";
-import { Header } from "./components/header";
-import  ZoomButton  from "./components/zoomButton";
-
-//HOME PAGE SECTIONS
-import { About } from "./sections/about";
-import { Schedule } from "./sections/schedule";
-import { Team } from "./sections/Team";
-import { Contact } from "./sections/contact";
+//DATA
 import JsonData from "./data/data.json";
 
 //PAGES
+import Home from "./pages/home";
 import Conversations from "./pages/conversations";
 import LGBTQ  from "./pages/lgbtq";
 
 import SmoothScroll from "smooth-scroll";
 
 //CSSes
+import './assets/css/bootstrap.css';
+import './assets/fonts/font-awesome/css/font-awesome.css';
+import './assets/css/style.css';
+import './assets/css/nivo-lightbox/nivo-lightbox.css';
+import './assets/css/nivo-lightbox/default.css';
+  
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1000,
+  speed: 500,
   speedAsDuration: true,
 });
 
@@ -59,21 +58,7 @@ function App() {
 
   return (
     <Routes>
-      <Route
-        path="/"
-        element= {(
-
-          <div>
-            <Navigation />
-            <Header data={landingPageData.Header} />
-            <ZoomButton />
-            <About data={landingPageData.About} />
-            <Schedule data={landingPageData.Schedule} />
-            <Team data={landingPageData.Team} />
-            <Contact data={landingPageData.Contact} />
-          </div>
-        )}
-      />
+      <Route path="/" element={<Home data={landingPageData.Home}/> } />
       <Route path="/pages/conversations" element={<Conversations data={landingPageData.Conversations} />} />
       <Route path="/pages/lgbtq" element={<LGBTQ data={landingPageData.LGBTQ} />} />
 

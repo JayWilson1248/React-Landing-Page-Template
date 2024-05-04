@@ -1,106 +1,64 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+//BOOTSTRAP NAV
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 import Logo from '../assets/img/llu_logo.png';
 
 export const Navigation = (props) => {
   return (
-    <nav id="menu" className="navbar navbar-default navbar-fixed-top">
-      <div className="container">
-        <div className="navbar-header">
-          <button
-            type="button"
-            className="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-          >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-          </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            <img src={Logo} alt="llu logo" width="auto" height="100%" />
-          </a>{" "}
-        </div>
+    <>
+      <Navbar sticky="top" expand="md" className="bg-body-tertiary navbar-fixed-top">
+        <Container>
+            <Navbar.Brand href="#page-top">
+              <img src={Logo} alt="llu logo" width="auto" height="75px" />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
 
-        <div
-          className="collapse navbar-collapse"
-          id="bs-example-navbar-collapse-1"
-        >
-          <ul className="nav navbar-nav navbar-right">
-            <li>
-              <Link to={{
-                pathname:"/",
-                hash:"#about"
-                }}
+            <Nav 
+              className="justify-content-center nav-justified"
+              defaultActiveKey="/#about"
+              onSelect={(selectedKey) => `selected ${selectedKey}`}
+              
+            >
+              <Nav.Link
+                href="/#about"
               >
-              <div>
                 Mission & Vision
-              </div>
-              </Link>
-            </li>
-            <li>
-            <Link to={{
-                pathname:"/",
-                hash:"#schedule"
-                }}
-                state={{title: "Current Schedule"}}
+              </Nav.Link>
+              <Nav.Link
+                href="/#schedule"
               >
-              <div>
                 Current Schedule
-              </div>
-              </Link>
-            </li>
-            <li>
-              <Link to={{
-                pathname: "/pages/Conversations",
-                hash:"#Conversations",
-                }}
-                state={{title: "Conversations"}}
-              >
+              </Nav.Link>
+              <Nav.Link
+                  href="/pages/Conversations"
+                >
                 Conversations
-              </Link>
-            </li>
-            <li>
-            <Link to={{
-                pathname:"/pages/lgbtq",
-                hash:"#LGBTQ"
-                }}
-                state={{title: "LGBTQ+"}}
+              </Nav.Link>
+              <Nav.Link
+              
+                href="/pages/lgbtq"
               >
-              <div>
                 LGBTQ+
-              </div>
-              </Link>
-            </li>
-            <li>
-            <Link to={{
-                pathname:"/",
-                hash:"#team"
-                }}
-                state={{title: "Team"}}
+              </Nav.Link>
+              <Nav.Link
+                href="/#team"
               >
-              <div>
                 Team
-              </div>
-              </Link>
-            </li>
-            <li>
-            <Link to={{
-                pathname:"/",
-                hash:"#contact"
-                }}
-                state={{title: "Contact & Giving"}}
+              </Nav.Link>
+              <Nav.Link
+                href="/#contact"
               >
-              <div>
                 Contact & Giving
-              </div>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
   );
 };
