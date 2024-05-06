@@ -17,7 +17,7 @@ import { Schedule } from "../sections/schedule";
 import { Team } from "../sections/Team";
 import { Contact } from "../sections/contact";
 
-function Home() {
+function Home(props) {
 
     const [landingPageData, setLandingPageData] = useState({});
 
@@ -41,10 +41,13 @@ function Home() {
         }
     }, [location]);
 
+    const title = props.titleInfo ? props.titleInfo[0].title : 'Some Title';
+    const desc = props.titleInfo ? props.titleInfo[0].desc : 'Some Description';
+
     return(
         <>
             <Navigation />
-            <Header data={landingPageData.Header} />
+            <Header data={landingPageData.Header}  title ={ title } desc={ desc }  />
             <ZoomButton />
             <About data={landingPageData.About} />
             <Schedule data={landingPageData.Schedule} />

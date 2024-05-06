@@ -5,6 +5,8 @@ function HeaderSmall(props) {
   //const location = useLocation();
   //const title = location.state.title;
 
+  
+
   return (
     <>
     <header id="header">
@@ -12,9 +14,10 @@ function HeaderSmall(props) {
         <div className="filter" />
         <div className="overlay">
           <div className="container">
-            <div className="row">
-              <div className="intro-text convert-br">
-                <h1>{/* title ? title : ""; */}Some Title</h1>
+            <div className="col-xs-10">
+              <div className="intro-text">
+                <h1>{props.title}</h1>
+                <p className="convert-br">{props.desc}</p>
               </div>
             </div>
           </div>

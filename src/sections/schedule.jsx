@@ -17,9 +17,8 @@ export const Schedule = (props) => {
             <br />
             Essential Reading Assignment: <br />
             <Button
-              
               variant="primary"
-              size="lg"
+              size="sm"
               href="https://sciencereligiondialogue.org/resources/profiles-listing/zimmerman/"
               target="_blank"
               rel="noreferer"
@@ -35,7 +34,7 @@ export const Schedule = (props) => {
           <h3 style={{ textTransform:"uppercase"}}>
           Scientists reflect on their journey of faith
           </h3>
-          <img src={NewSeries} alt="michaelangelo hand of God"/>
+          <img src={NewSeries} width="50%" alt="michaelangelo hand of God"/>
           <p>
           Announcing A New Series Organized by Mailen Kootsey
           </p>

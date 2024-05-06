@@ -12,15 +12,15 @@ export const Navigation = (props) => {
     <>
       <Navbar sticky="top" expand="md" className="bg-body-tertiary navbar-fixed-top">
         <Container>
-            <Navbar.Brand href="#page-top">
-              <img src={Logo} alt="llu logo" width="auto" height="75px" />
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-
+          <Navbar.Brand href="#page-top">
+            <img src={Logo} alt="llu logo" width="auto" height="50px" />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
             <Nav 
               className="justify-content-center nav-justified"
-              defaultActiveKey="/#about"
+              
+              
               onSelect={(selectedKey) => `selected ${selectedKey}`}
               
             >

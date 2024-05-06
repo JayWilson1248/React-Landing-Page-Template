@@ -25,14 +25,14 @@ function ZoomButton() {
     <>
      
       <Button 
+        className="zoomButton"
         variant="primary"
         size="lg"
         
         type="button"
         onClick={handleShow}
-        style={{ position:"fixed", bottom:"20px", left:"20px", zIndex:500}}
       >
-        Click here to join our zoom class!
+        Join the Zoom Session
       </Button>
      
 
@@ -65,6 +65,8 @@ function ZoomButton() {
           <Button 
             variant="primary" 
             href="https://us02web.zoom.us/j/81174477062?pwd=Sk9wVEJkNk8waENVekoyVW0vblNxdz090"
+            target="_blank"
+            rel="noreferrer"
             onClick={handleClose}>
             Launch Zoom
           </Button>

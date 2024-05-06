@@ -53,14 +53,11 @@ function App() {
 
   }, [location]);
 
-  
-  
-
   return (
     <Routes>
-      <Route path="/" element={<Home data={landingPageData.Home}/> } />
-      <Route path="/pages/conversations" element={<Conversations data={landingPageData.Conversations} />} />
-      <Route path="/pages/lgbtq" element={<LGBTQ data={landingPageData.LGBTQ} />} />
+      <Route path="/" element={<Home data={landingPageData.Home} titleInfo={landingPageData.Headers} /> } />
+      <Route path="/pages/conversations" element={<Conversations data={landingPageData.Conversations}  titleInfo={landingPageData.Headers}/>} />
+      <Route path="/pages/lgbtq" element={<LGBTQ data={landingPageData.LGBTQ}  titleInfo={landingPageData.Headers} />} />
 
     </Routes>
   );

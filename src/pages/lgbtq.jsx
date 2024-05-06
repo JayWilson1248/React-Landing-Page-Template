@@ -5,10 +5,14 @@ import HeaderSmall from "../components/header-small";
 import Footer from "../components/footer";
 
 function LGBTQ(props) {
+
+  const title = props.titleInfo ? props.titleInfo[2].title : 'Some Title';
+  const desc = props.titleInfo ? props.titleInfo[2].desc : 'Some Description';
+
   return (
     <>
       <Navigation />
-      <HeaderSmall />
+      <HeaderSmall title ={ title } desc = { desc } />
 
       <div id="LGBTQ">
         <div className="container">
@@ -50,13 +54,16 @@ function LGBTQ(props) {
                     Elder Wilson has, many times, gone on record condemning our LGBGTQIA+ brothers and sisters.  Sermons and tweets make clear his position.  We especially note the juxtaposition of these recent events.  Note the statement of the Southern Ghana Union Conference President in Africa supporting the legal ban of LGBGTQIA+.  This Illustrates the horrific consequences of our church leader’s very public campaign perpetuating the ostracization of our dear brothers and sisters.
                     <br /><br />
                     Here is the recent tweet from President Ted Wilson: 
-                    <blockquote>
-                        “Adultery, fornication, and LGBTQIA+ are in direct opposition to God’s law and heavenly plan for human sexuality. We must make a conscious choice, even though unpopular, to speak up for Bible truth and not simply go along with societal trends.”
-                    </blockquote>
-                    <br />
-                    <h4 className="text-center">
+                  </p>
+                  <blockquote>
+                      “Adultery, fornication, and LGBTQIA+ are in direct opposition to God’s law and heavenly plan for human sexuality. We must make a conscious choice, even though unpopular, to speak up for Bible truth and not simply go along with societal trends.”
+                  </blockquote>
+                  <br />
+                  <h4 className="text-center">
                     The LLU Church Sabbath Seminars Class has voted to support this statement:
-                    </h4>
+                  </h4>
+                  <p>
+                    
                     <br /><br />
                     <strong>
                       The Sabbath Seminars class of the Loma Linda University Church rejects the equation of LGBTQIA+ individuals to adulterers and fornicators, as indicated in a recent tweet by Ted Wilson, president, General Conference of Seventh-day Adventists. We believe that human sexual orientation is largely a fundamental inborn quality, and that the diversity of our sexuality represents the diversity of God's creation. The rejection of those who do not conform to the majority orientation is a sin. Rather than condemning those who suffer from exclusion, rejection, abuse and trauma, we should, following the example of Jesus, welcome all, encourage all, and include all -- beginning with our LGBTQIA+ members.

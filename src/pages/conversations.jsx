@@ -3,14 +3,22 @@ import React from "react";
 //navigation
 import { Navigation } from "../components/navigation";
 import  HeaderSmall  from "../components/header-small";
+import  ZoomButton  from "../components/zoomButton";
+
 import Footer from "../components/footer";
 import Button  from "react-bootstrap/Button";
 
 function Conversations(props) {
+  
+  const title = props.titleInfo ? props.titleInfo[1].title : 'Some Title';
+  const desc = props.titleInfo ? props.titleInfo[1].desc : 'Some Description';
+
   return (
     <>
     <Navigation />
-    <HeaderSmall />
+    <HeaderSmall  title ={ title } desc={ desc } />
+    <ZoomButton />
+
     <div id="Conversations" className="text-center">
       <div className="container">
         <div className="section-title">
@@ -27,40 +35,39 @@ function Conversations(props) {
           </div>
         
         </div>
-        <div className="row">
-          <div>
-            {props.data
-              ? props.data.map((d, i) => (
-                  <div
-                    key={`${d.title}-${i}`}
-                    className="conversation-items col-xs-12 convert-br"
-                  >
-                    <h4>{d.date}</h4>
-                    <div>
-                      <p>
-                      {d.href ? 
-                      <Button
-                        variant="primary"
-                        type="button"
-                        href={d.href}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                     
-                        {d.title}
-                   
-                      </Button>
-                      : 
-                         d.title
-                      }
-                      </p>
-                    </div>
-                    <br />
-                    <p style={{ fontWeight:"lighter"}}>{d.desc}</p>
+        
+        <div className="col-xs-10 col-xs-offset-1 text-center">
+          {props.data
+            ? props.data.map((d, i) => (
+                <div
+                  key={`${d.title}-${i}`}
+                  className="conversation-items col-xs-12 convert-br"
+                >
+                  <h4>{d.date}</h4>
+                  <div>
+                    <p>
+                    {d.href ? 
+                    <Button
+                      variant="primary"
+                      type="button"
+                      href={d.href}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                    
+                      {d.title}
+                  
+                    </Button>
+                    : 
+                        d.title
+                    }
+                    </p>
                   </div>
-                ))
-              : "Loading..."}
-          </div>
+                  <br />
+                  <p style={{ fontWeight:"lighter"}}>{d.desc}</p>
+                </div>
+              ))
+            : "Loading..."}
         </div>
       </div>
     </div>

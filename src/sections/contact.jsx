@@ -1,7 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
-import ListGroup from 'react-bootstrap/ListGroup';
 
 
 const initialState = {
@@ -22,18 +21,33 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
+
+      document.getElementById("submitForm").style.display = 'none';
     
     
       /* replace below with your own Service ID, 
       Template ID and Public Key from your EmailJS account */ 
+
+      /* Messages currently send to jaywilson2148@gmail.com referenceing Bill Shull. 
+        TODO: set up for Sabbath Seminars Email */
     
     
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm("service_1lcxlcc", "template_41zwvsb", e.target, "KC4cRmNWv5DE5BQ6U")
       .then(
         (result) => {
           console.log(result.text);
           clearState();
+          
+          document.getElementById("success").style.display = 'block';
+
+          setTimeout(function() {
+            document.getElementById("submitForm").style.display = 'block';
+            document.getElementById("submitForm").reset();
+            document.getElementById("success").style.display = 'none';  
+            
+          }, 5000)
+
         },
         (error) => {
           console.log(error.text);
@@ -41,7 +55,7 @@ export const Contact = (props) => {
       );
   };
   return (
-    <div>
+    <>
       <div id="contact">
         <div className="container">
           <div className="col-md-8">
@@ -53,16 +67,16 @@ export const Contact = (props) => {
                   get back to you as soon as possible.
                 </p>
               </div>
-              <form name="sentMessage" validate="true" onSubmit={handleSubmit}>
+              <form id="submitForm" name="sentMessage" validate="true" onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
                         type="text"
-                        id="name"
-                        name="name"
+                        id="from_name"
+                        name="from_name"
                         className="form-control"
-                        placeholder="Name"
+                        placeholder="Your Name"
                         required
                         onChange={handleChange}
                       />
@@ -73,10 +87,10 @@ export const Contact = (props) => {
                     <div className="form-group">
                       <input
                         type="email"
-                        id="email"
-                        name="email"
+                        id="user_email"
+                        name="user_email"
                         className="form-control"
-                        placeholder="Email"
+                        placeholder="Your Email Address"
                         required
                         onChange={handleChange}
                       />
@@ -96,11 +110,31 @@ export const Contact = (props) => {
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
-                <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
+                <input 
+                  type="hidden"
+                  name="to_name"
+                  id="to_name"
+                  value="Sabbath Seminars"
+                />
+                <input 
+                  type="hidden"
+                  name="to_email"
+                  id="to_email"
+                  value="info@sabbathseminars.net"
+                />
+                
+                <button 
+                  type="submit" 
+                  className="btn btn-custom btn-lg"
+                >
                   Send Message
                 </button>
               </form>
+              <div id="success" style={{display:'none'}}>
+                  <p>
+                      Message sent successfully. Please check your email periodically for a response.
+                  </p>
+                </div>
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
@@ -153,15 +187,14 @@ export const Contact = (props) => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="row">
+
           <div className="col-sm-12 text-center"> {/* Giving */}
             <p>
             You may support Sabbath Seminars financially by making a contribution at the Loma Linda University Church website’s giving page.<br />
             </p>
-            <p className="col-xs-6 text-left col-xs-offset-4">
-              <ListGroup>
-                <ListGroup.Item>
+            <div className="col-xs-8 text-left col-xs-offset-2">
+              <ul style={{fontSize:"16px"}}>
+                <li>
                   Start at <a
                         className="dark-link"
                         href="http://www.lluc.org" 
@@ -171,18 +204,19 @@ export const Contact = (props) => {
                       >
                       www.lluc.org
                     </a>
-                </ListGroup.Item>
-                <ListGroup.Item>
-                  You will click on the GIVE button on the top right of the home page, then again on the GIVE NOW button in the center.
-                </ListGroup.Item>
-                <ListGroup.Item>
+                </li>
+                <li>
+                  You will click on the GIVE button on the top right of the home page,
+                  <br />&nbsp;&nbsp;&nbsp; - then again on the GIVE NOW button in the center.
+                </li>
+                <li>
                   Under Local Church click on More Offering Categories, then click on Sabbath Seminars.  <br />
-                </ListGroup.Item>
-              </ListGroup>
-            </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>   
-    </div>
+    </>
   );
 };

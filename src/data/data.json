@@ -1,8 +1,18 @@
 {
-  "Header": {
-    "title": "Sabbath Seminars",
-    "paragraph": "Room 3208\nCentennial Complex of Loma Linda University\nSabbath Morning 10:30-12:30"
-  },
+  "Headers": [
+    {
+      "title": "Sabbath Seminars",
+      "desc": "Room 3208\nCentennial Complex of Loma Linda University\nSabbath Morning 10:30-12:30"
+    },
+    {
+      "title": "Conversations",
+      "desc": "An Archive of some of our conversations, content, and other media."
+    },
+    {
+      "title": "LGBTQ+",
+      "desc": "A discussion on a tough topic."
+    }
+  ],
   "Conversations": [
     {
       "title": "A Conversation with Vern Carner- #1",
